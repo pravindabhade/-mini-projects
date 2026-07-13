@@ -1,0 +1,155 @@
+/* ==========================
+   Google Font
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    padding:20px;
+}
+
+/* ==========================
+   Container
+========================== */
+.container{
+    width:100%;
+    max-width:420px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    text-align:center;
+}
+
+/* ==========================
+   Heading
+========================== */
+.container h1{
+    color:#fff;
+    margin-bottom:25px;
+    font-size:30px;
+    font-weight:600;
+}
+
+/* ==========================
+   Input
+========================== */
+.input-box{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.input-box input{
+    width:100%;
+    height:55px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:16px;
+    background:rgba(255,255,255,.12);
+    color:#fff;
+}
+
+.input-box input::placeholder{
+    color:#ddd;
+}
+
+/* ==========================
+   Buttons
+========================== */
+button{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+/* ==========================
+   QR Box
+========================== */
+.qr-box{
+    margin:25px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:250px;
+    border-radius:15px;
+    background:rgba(255,255,255,.05);
+    border:2px dashed rgba(255,255,255,.15);
+}
+
+.qr-box img{
+    width:220px;
+    display:none;
+    padding:10px;
+    background:#fff;
+    border-radius:10px;
+}
+
+/* ==========================
+   Download Button
+========================== */
+#downloadBtn{
+    display:none;
+    margin-top:10px;
+    background:#16a34a;
+}
+
+#downloadBtn:hover{
+    background:#15803d;
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media(max-width:500px){
+
+.container{
+    padding:20px;
+}
+
+.container h1{
+    font-size:24px;
+}
+
+.qr-box{
+    min-height:220px;
+}
+
+.qr-box img{
+    width:180px;
+}
+
+}
