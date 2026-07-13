@@ -1,0 +1,172 @@
+/* ==========================
+   Google Font
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+}
+
+/* ==========================
+   Calculator
+========================== */
+.calculator{
+    width:360px;
+    padding:25px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35),
+        inset 0 1px 1px rgba(255,255,255,.15);
+}
+
+/* ==========================
+   Display
+========================== */
+.display{
+    margin-bottom:20px;
+}
+
+.display input{
+    width:100%;
+    height:80px;
+    border:none;
+    outline:none;
+    background:rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:20px;
+    text-align:right;
+    font-size:2rem;
+    color:#fff;
+    box-shadow:inset 0 5px 10px rgba(0,0,0,.25);
+}
+
+.display input::placeholder{
+    color:#ddd;
+}
+
+/* ==========================
+   Buttons Grid
+========================== */
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+/* ==========================
+   Button Style
+========================== */
+button{
+    height:65px;
+    border:none;
+    border-radius:18px;
+    font-size:1.3rem;
+    font-weight:600;
+    cursor:pointer;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    transition:.25s;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.2),
+        inset 0 1px 1px rgba(255,255,255,.08);
+}
+
+/* Hover */
+button:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.18);
+}
+
+/* Click */
+button:active{
+    transform:scale(.95);
+}
+
+/* ==========================
+   Operators
+========================== */
+.operator{
+    background:#2563eb;
+}
+
+.operator:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Equal Button
+========================== */
+.equal{
+    background:#16a34a;
+}
+
+.equal:hover{
+    background:#15803d;
+}
+
+/* ==========================
+   Clear Button
+========================== */
+.clear{
+    background:#dc2626;
+}
+
+.clear:hover{
+    background:#b91c1c;
+}
+
+/* ==========================
+   Delete Button
+========================== */
+.delete{
+    background:#f59e0b;
+}
+
+.delete:hover{
+    background:#d97706;
+}
+
+/* ==========================
+   Zero Button
+========================== */
+.zero{
+    grid-column:span 2;
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media(max-width:420px){
+
+.calculator{
+    width:95%;
+    padding:18px;
+}
+
+button{
+    height:58px;
+    font-size:1.1rem;
+}
+
+.display input{
+    height:70px;
+    font-size:1.7rem;
+}
+
+}
