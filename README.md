@@ -1,7 +1,5 @@
 # 🚀 HTML, CSS & JavaScript Mini Projects
 
-# 🚀 HTML, CSS & JavaScript Mini Projects
-
 A collection of **10+ HTML, CSS & JavaScript** mini projects built to improve frontend development skills.
 
 <p align="center">
