@@ -1,0 +1,176 @@
+/* ==========================
+   Google Font
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81,#0f172a);
+    overflow:hidden;
+}
+
+/* ==========================
+   Background Glow
+========================== */
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#3b82f6;
+    border-radius:50%;
+    filter:blur(180px);
+    top:-120px;
+    left:-120px;
+    opacity:.35;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#8b5cf6;
+    border-radius:50%;
+    filter:blur(180px);
+    bottom:-120px;
+    right:-120px;
+    opacity:.35;
+}
+
+/* ==========================
+   Container
+========================== */
+.container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:500px;
+    padding:20px;
+}
+
+/* ==========================
+   Clock Card
+========================== */
+.clock{
+
+    text-align:center;
+
+    padding:40px 30px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35);
+}
+
+/* ==========================
+   Time
+========================== */
+#time{
+
+    font-size:65px;
+    font-weight:700;
+
+    color:#ffffff;
+
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 10px rgba(59,130,246,.7),
+        0 0 25px rgba(59,130,246,.5);
+}
+
+/* ==========================
+   Day
+========================== */
+#day{
+
+    margin-top:15px;
+
+    color:#60a5fa;
+
+    font-size:28px;
+
+    font-weight:600;
+}
+
+/* ==========================
+   Date
+========================== */
+#date{
+
+    margin-top:10px;
+
+    color:#d1d5db;
+
+    font-size:18px;
+}
+
+/* ==========================
+   Clock Animation
+========================== */
+.clock{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media(max-width:500px){
+
+.clock{
+
+    padding:30px 20px;
+}
+
+#time{
+
+    font-size:45px;
+}
+
+#day{
+
+    font-size:22px;
+}
+
+#date{
+
+    font-size:16px;
+}
+
+}

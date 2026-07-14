@@ -1,0 +1,204 @@
+/* ==========================
+   Google Font
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81,#0f172a);
+    overflow:hidden;
+}
+
+/* ==========================
+   Background Glow
+========================== */
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#3b82f6;
+    border-radius:50%;
+    filter:blur(180px);
+    top:-150px;
+    left:-150px;
+    opacity:.35;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#8b5cf6;
+    border-radius:50%;
+    filter:blur(180px);
+    bottom:-150px;
+    right:-150px;
+    opacity:.35;
+}
+
+/* ==========================
+   Container
+========================== */
+.container{
+    position:relative;
+    z-index:2;
+}
+
+/* ==========================
+   Clock
+========================== */
+.clock{
+    position:relative;
+    width:380px;
+    height:380px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:2px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        inset 0 0 30px rgba(255,255,255,.05);
+
+    animation:float 3s infinite ease-in-out;
+}
+
+/* ==========================
+   Numbers
+========================== */
+.clock span{
+    position:absolute;
+    inset:18px;
+    text-align:center;
+    transform:rotate(calc(30deg * var(--i)));
+}
+
+.clock span b{
+    display:inline-block;
+    transform:rotate(calc(-30deg * var(--i)));
+
+    color:#fff;
+    font-size:24px;
+    font-weight:600;
+}
+
+/* ==========================
+   Hands
+========================== */
+.hand{
+    position:absolute;
+    left:50%;
+    bottom:50%;
+    transform-origin:bottom;
+    transform:translateX(-50%) rotate(0deg);
+    border-radius:20px;
+}
+
+/* Hour */
+.hour{
+    width:8px;
+    height:90px;
+    background:#3b82f6;
+    box-shadow:0 0 15px #3b82f6;
+}
+
+/* Minute */
+.minute{
+    width:6px;
+    height:125px;
+    background:#22c55e;
+    box-shadow:0 0 15px #22c55e;
+}
+
+/* Second */
+.second{
+    width:3px;
+    height:145px;
+    background:#ef4444;
+    box-shadow:0 0 15px #ef4444;
+}
+
+/* ==========================
+   Center Dot
+========================== */
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:0 0 15px #fff;
+}
+
+/* ==========================
+   Animation
+========================== */
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media(max-width:500px){
+
+.clock{
+    width:300px;
+    height:300px;
+}
+
+.clock span b{
+    font-size:18px;
+}
+
+.hour{
+    height:70px;
+}
+
+.minute{
+    height:100px;
+}
+
+.second{
+    height:115px;
+}
+
+}
