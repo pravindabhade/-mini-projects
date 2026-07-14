@@ -1,84 +1,88 @@
 # 🚀 HTML, CSS & JavaScript Mini Projects
 
-Welcome to my **HTML, CSS & JavaScript Mini Projects** repository!
+# 🚀 HTML, CSS & JavaScript Mini Projects
 
-This repository contains a collection of beginner to intermediate web development projects built using **HTML5**, **CSS3**, and **Vanilla JavaScript**. These projects helped me strengthen my front-end development skills through hands-on practice.
+A collection of **10+ HTML, CSS & JavaScript** mini projects built to improve frontend development skills.
 
-## 📌 Technologies Used
+<p align="center">
+  <img src="./mini-project.png" alt="HTML CSS JavaScript Mini Projects" width="100%">
+</p>
+
+---
+
+## 📂 Projects
+
+| No. | Project | Technologies | Live Demo | Source Code |
+|:---:|---------|--------------|:---------:|:-----------:|
+| 01 | Calculator | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 02 | To-Do List | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 03 | Weather App | HTML, CSS, JavaScript, API | 🔗 Live | 📁 Code |
+| 04 | QR Code Generator | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 05 | Tic Tac Toe | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 06 | Digital Clock | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 07 | Analog Clock | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 08 | Image Slider | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 09 | Notes App | HTML, CSS, JavaScript | 🔗 Live | 📁 Code |
+| 10 | AI Voice Assistant | HTML, CSS, JavaScript, Gemini API | 🔗 Live | 📁 Code |
+
+---
+
+## 🛠️ Technologies
 
 - HTML5
 - CSS3
 - JavaScript (ES6)
 - Responsive Design
-- Git & GitHub
-
-## 📂 Projects
-
-This repository includes projects such as:
-
-- Calculator
-- To-Do List
-- Weather App
-- Digital Clock
-- Image Slider
-- QR Code Generator
-- Password Generator
-- Tic Tac Toe
-- Notes App
-- Portfolio Website
-
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a31449ab-b909-4970-ab66-2229bc61c657" />
-
-
-> More projects will be added regularly.
-
-## 📁 Repository Structure
-
-```
-mini-projects/
-│
-├── Project-1/
-├── Project-2/
-├── Project-3/
-├── Project-4/
-├── Project-5/
-├── Project-6/
-├── Project-7/
-├── Project-8/
-├── Project-9/
-├── Project-10/
-│
-└── README.md
-```
-
-## 🚀 Getting Started
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/pravindabhade/-mini-projects.git
-```
-
-2. Open any project folder.
-
-3. Open the `index.html` file in your browser.
-
-No installation or additional dependencies are required.
-
-## 🎯 Objectives
-
-- Practice Front-End Development
-- Improve JavaScript Programming Skills
-- Build Responsive Websites
-- Strengthen Problem-Solving Skills
-- Create a Professional GitHub Portfolio
-
-## 👨‍💻 Author
-
-**Pravin Anna Dabhade**
-
-GitHub: https://github.com/pravindabhade
+- Local Storage
+- Fetch API
+- REST APIs
 
 ---
 
-⭐ If you like this repository, don't forget to **Star** it!
+## 📁 Repository Structure
+
+```text
+mini-projects/
+│
+├── mini-project.png
+├── README.md
+├── Calculator/
+├── todo-list/
+├── weather-app/
+├── qr-code-generator/
+├── tic-tac-toe/
+├── digital-clock/
+├── analog-clock/
+├── image-slider/
+├── notes-app/
+├── ai-voice-assistant/
+└── portfolio/
+```
+
+---
+
+## ⭐ Support
+
+If you like this repository:
+
+⭐ Star this repository
+
+🍴 Fork this repository
+
+📢 Share it with your friends
+
+---
+
+## 👨‍💻 Author
+
+**Pravin Dabhade**
+
+- GitHub: https://github.com/pravindabhade
+- LinkedIn: *(Add your LinkedIn URL)*
+- Portfolio: *(Add your Portfolio URL)*
+
+---
+
+<p align="center">
+Made with ❤️ by <strong>Pravin Dabhade</strong>
+</p>
